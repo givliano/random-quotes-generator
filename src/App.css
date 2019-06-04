@@ -1,33 +1,75 @@
-.App {
-  text-align: center;
+/* //transformar o tamanho da fonte padrão de 16 px para 10 px (16 * 0.625 = 10) */
+html {
+  font-size: 62.5%;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
+body {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 1.6rem;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+button {
+  cursor: pointer;
+}
+
+.container {
+  align-items: center;
+  transition: back;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  height: 100vh;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  transition: background-color 0.7s ease-in-out;
 }
 
-.App-link {
-  color: #61dafb;
+#quote-box {
+  background-color: #f9f9f9;
+  border-radius: 3px;
+  display: flex;
+  flex-direction: column;
+  letter-spacing: .1rem;
+  max-width: 50rem;
+  margin-top: auto;
+  margin-bottom: auto;
+  min-height: 5rem;
+  padding: 3.2rem;
+  width: 45rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#text {
+  font-size: 2.8rem;
+  font-family: 'Source Serif Pro', serif;
+}
+
+#author {
+  align-self: flex-end;
+}
+
+.box-bottom {
+  display: flex;
+  justify-content: space-between;
+}
+
+#new-quote {
+  border-radius: 3px;
+  border: none;
+  font-size: 1.6rem;
+  height: 3.4rem;
+  padding: 0.8rem;
+  outline: none;
+  transition: background-color 0.7s ease-in-out;
+  width: 10rem;
+}
+
+#new-quote:focus {
+  border: none;
+  outline: none;
+}
+
+#tweet-quote {
+  border-radius: 3px;
+  color: black;
+  text-decoration: none;
+  padding: 0.8rem;
+  transition: background-color 0.7s ease-in-out;
 }
