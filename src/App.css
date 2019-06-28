@@ -51,14 +51,18 @@ button {
 }
 
 #new-quote {
+  display: inline-block;
   border-radius: 3px;
   border: none;
   font-size: 1.6rem;
   height: 3.4rem;
+  letter-spacing: 0.05rem;
   padding: 0.8rem;
   outline: none;
   transition: background-color 0.7s ease-in-out;
   width: 10rem;
+  white-space: nowrap;
+  text-align: center;
 }
 
 #new-quote:focus {
